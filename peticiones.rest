@@ -1,0 +1,73 @@
+###
+GET http://localhost:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NTk0Mzd9.-H_7JBSbd-_pUOYITGWKt39vuG5dkObKGH6MHrPso-o
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "nombre": "Gelocatil gripe",
+    "descripcion":"medicamento para el resfriado",
+    "precio":9,
+    "categoria": "antigripales",
+    "stock": 12,
+    "disponible":true
+}
+
+###
+PUT http://localhost:3000/api/products/64b676faffdd336db4b445d3
+Content-Type: application/json
+
+{
+    "stock": 14
+}
+
+###
+DELETE http://localhost:3000/api/products/64b676faffdd336db4b445d3
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Lorena",
+    "email": "lorenag@gmail.com",
+    "password": "12001"
+}
+
+###
+PUT http://localhost:3000/api/users/product/64b679e4ffdd336db4b445da
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NjA3MDJ9.8bXwP_0mq5dJernceV5EL7koEDMtYleAkx2AyLPS4j0
+
+
+
+###
+GET http://localhost:3000/api/users/64b6b2e17745def1bd7c99f8
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "nombre": "Vincigrip forte",
+    "descripcion": "medicamento para la gripe",
+    "precio": 10,
+    "categoria": "antigripales",
+    "stock": 7,
+    "disponible":true,
+    "comprador":"64b6b2e17745def1bd7c99f8"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "anavajasg@gmail.com",
+    "password": "12001"
+}
+
+###
+DELETE http://localhost:3000/api/products/999986666666
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NjA3MDJ9.8bXwP_0mq5dJernceV5EL7koEDMtYleAkx2AyLPS4j0
