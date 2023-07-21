@@ -3,6 +3,9 @@ GET http://localhost:3000/api/products
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NTk0Mzd9.-H_7JBSbd-_pUOYITGWKt39vuG5dkObKGH6MHrPso-o
 
 ###
+GET http://localhost:3000/api/products/64b679e4ffdd336db4b445da
+
+###
 POST http://localhost:3000/api/products
 Content-Type: application/json
 

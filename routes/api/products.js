@@ -4,7 +4,7 @@ var router = express.Router();
 const Product = require('../../src/models/product.model');
 const { checkProductId } = require('../../src/helpers/middlewares');
 
-/* GET users listing. */
+
 router.get('/', async (req, res) => {
 
     try {
@@ -14,6 +14,18 @@ router.get('/', async (req, res) => {
         res.json({ fatal: error.message});
     }
 
+});
+
+router.get('/:productId',checkProductId,async (req,res) => {
+    const {productId} = req.params;
+
+    try {
+        const product = await Product.findById(productId);
+        res.json(product);
+
+    }catch(error){
+        res.json({fatal:error.message});
+    }
 });
 
 router.post('/', async (req,res) => {

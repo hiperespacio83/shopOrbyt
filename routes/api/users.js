@@ -23,7 +23,7 @@ router.post('/register', async (req,res) => {
 
     // encriptamos la password
 
-    req.body.password = bcrypt.hashSync(req.body.password,0);
+    req.body.password = bcrypt.hashSync(req.body.password,8);
 
     try {
         // crear el user en la BD
