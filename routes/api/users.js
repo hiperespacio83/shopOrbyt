@@ -5,6 +5,16 @@ const User = require('../../src/models/user.model');
 const { createToken } = require('../../src/helpers/utils');
 const { checkToken } = require('../../src/helpers/middlewares');
 
+
+router.get('/', async (req,res) => {
+    try {
+        const users = await User.find().populate('cart');
+        res.json(users);
+    } catch (error) {
+        res.json({fatal:error.message});
+    }
+})
+
 router.get('/:userId', async (req,res) => {
 
     const {userId} = req.params;

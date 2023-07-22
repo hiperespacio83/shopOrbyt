@@ -74,3 +74,6 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/api/products/999986666666
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NjA3MDJ9.8bXwP_0mq5dJernceV5EL7koEDMtYleAkx2AyLPS4j0
+
+###
+GET http://localhost:3000/api/users

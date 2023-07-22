@@ -7,7 +7,7 @@ const productSchema = new Schema ({
     categoria: String,
     stock: Number,
     disponible: Boolean,
-    comprador: {type: Schema.Types.ObjectId, ref: 'user'}
+    comprador: [{type: Schema.Types.ObjectId, ref: 'user'}]
 },{
     timestamps: true,
     versionKey: false
