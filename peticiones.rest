@@ -67,7 +67,7 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "email": "anavajasg@gmail.com",
+    "email": "lore@gmail.com",
     "password": "12001"
 }
 
@@ -77,3 +77,13 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3
 
 ###
 GET http://localhost:3000/api/users
+
+###
+PUT http://localhost:3000/api/users/64b6d551c392cdc5fb54beaa
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmQ1NTFjMzkyY2RjNWZiNTRiZWFhIiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IkxvcmVuYSIsImlhdCI6MTY5MDIxNjI3M30.ohWF9NAcP6YiKq4LiatGh4ZC2NJiUF8atVteRDcrYNw
+
+
+{
+    "email": "lore@gmail.com"
+}

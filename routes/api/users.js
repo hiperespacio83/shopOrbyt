@@ -61,7 +61,7 @@ router.post('/login', async (req,res)=>{
     return res.json({fatal: "error en el email y/o contraseña"});
    }
 
-   res.json({success:'Login correcto', token:createToken(user)});
+   res.json({success:'Login correcto', token:createToken(user),user});
 
 });
 
@@ -88,6 +88,22 @@ router.put('/product/:productId',checkToken, async (req,res) => {
 
 })
 
+// actualizar datos de usuario
+
+router.put('/:userId',checkToken, async (req,res)=> {
+
+    const {userId} = req.params;
+
+    try {
+        
+        const updatedUser = await User.findByIdAndUpdate(userId,req.body);
+        res.json(updatedUser);
+
+    } catch(error) {
+        res.json ({fatal:error.message});
+    }
+    
+});
 
 
 module.exports = router;
