@@ -40,8 +40,8 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/api/users/product/64b679e4ffdd336db4b445da
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmIyZTE3NzQ1ZGVmMWJkN2M5OWY4IiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IlRpbm8iLCJpYXQiOjE2ODk3NjA3MDJ9.8bXwP_0mq5dJernceV5EL7koEDMtYleAkx2AyLPS4j0
+PUT http://localhost:3000/api/users/product/64b6c01a9b359560aefc175f
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmQ1NTFjMzkyY2RjNWZiNTRiZWFhIiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IkxvcmVuYSIsImlhdCI6MTY5MDM2MzE2MH0._mTzCFUNzK_ZvKEpQ8SxnjI7EMJVCwwTCtpc6iqs5Fc
 
 
 
@@ -67,7 +67,7 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "email": "anavajasg@gmail.com",
+    "email": "lorena@gmail.com",
     "password": "12001"
 }
 

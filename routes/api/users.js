@@ -90,7 +90,7 @@ router.put('/product/:productId',checkToken, async (req,res) => {
 
 // actualizar datos de usuario
 
-router.put('/:userId',checkToken, async (req,res)=> {
+router.put('/:userId', async (req,res)=> {
 
     const {userId} = req.params;
 

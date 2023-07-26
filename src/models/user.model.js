@@ -11,7 +11,7 @@ const userSchema = new Schema ({
         default: 'regular'
     },
     password: String,
-    cart: [{type: Schema.Types.ObjectId, ref: 'product'}]
+    cart: [{type: Schema.Types.ObjectId ,ref: 'product'}]
 }, {
     timestamps: true,
     versionKey: false
