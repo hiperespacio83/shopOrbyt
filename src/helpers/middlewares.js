@@ -24,9 +24,6 @@ const checkToken = async (req,res,next) => {
     // payload (user_id,user_role,user_name,iat)
    req.user = await User.findById(payload.user_id).populate('cart');
 
-  
-
-    
     
     next();
 
@@ -45,9 +42,6 @@ const checkProductId = async (req,res,next) => {
     } catch(error) {
         return res.json({fatal:'El id del producto tiene un formato incorrecto'});
     }
-
-    
-    
 
     next();
 

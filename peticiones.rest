@@ -34,14 +34,14 @@ POST http://localhost:3000/api/users/register
 Content-Type: application/json
 
 {
-    "username": "tino",
-    "email": "anavajasg@gmail.com",
+    "username": "Francisco",
+    "email": "marta@gmail.com",
     "password": "12001"
 }
 
 ###
 PUT http://localhost:3000/api/users/product/64b6c01a9b359560aefc175f
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmQ1NTFjMzkyY2RjNWZiNTRiZWFhIiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IkxvcmVuYSIsImlhdCI6MTY5MDM2MzE2MH0._mTzCFUNzK_ZvKEpQ8SxnjI7EMJVCwwTCtpc6iqs5Fc
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmQ1NTFjMzkyY2RjNWZiNTRiZWFhIiwidXNlcl9yb2xlIjoicmVndWxhciIsInVzZXJfbmFtZSI6IkxvcmVuYSIsImlhdCI6MTY5MDQ2NDAzNn0.kwLHtEARBAolfzKeA1fHLeWYaXN5m63f3HvXnn8-SU8
 
 
 
@@ -85,5 +85,5 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjRiNmQ1NTFj
 
 
 {
-    "email": "lore@gmail.com"
+    "email": "lorena83@gmail.com"
 }
